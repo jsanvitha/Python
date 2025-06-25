@@ -1,0 +1,10 @@
+m=input().split()
+n=input().split()
+lista=[]
+listb=[]
+for i in m:
+    lista.append(int(i))
+for x in n:
+    listb.append(int(x))
+print(lista)
+print(listb)
