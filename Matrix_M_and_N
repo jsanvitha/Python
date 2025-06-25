@@ -1,0 +1,18 @@
+user_input=input().split()
+rows=int(user_input[0])
+columns=int(user_input[1])
+final_list=[]
+for i in range (rows):
+    list_row=[]
+    list_col_str=input().split()
+    list_col_integer=[]
+    for w in list_col_str:
+        list_col_integer.append(int(w))
+    if len(list_col_integer)==columns:
+        list_row.append(list_col_integer)
+    else:
+        continue
+    final_list.append(list_row)
+for x in final_list:
+    for y in x:
+        print(y)
